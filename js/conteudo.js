@@ -3,134 +3,164 @@
 EDITE SOMENTE ESTE ARQUIVO PARA ADAPTAR A PROPOSTA
 =====================================================
 
-1. Troque os textos entre aspas.
+PROJETO:
+Sarah Melo + Gui Nishiyama
+HYROX São Paulo 2026
+Elite Core Brasil
+
+1. Atualize Instagram, e-mail e métricas da Sarah antes do envio.
 2. Substitua as imagens em assets/images mantendo os nomes.
-3. Atualize números, datas, entregáveis e investimento antes do envio.
-4. Mantenha o logo da marca em assets/logos/logo-gatorade.png.
+3. Adicione o logo da Elite Core Brasil em:
+   assets/logos/logo-elite-core.png
+4. Atualize entregáveis e formato do apoio após alinhamento final.
 */
 
 window.PROPOSTA = {
     configuracao: {
-        tituloPagina: "Guilherme Nishiyama | Proposta Gatorade · Maratona de Buenos Aires",
-        descricaoPagina: "Proposta de parceria entre Guilherme Nishiyama e Gatorade para a Maratona de Buenos Aires.",
-        marca: "Gatorade",
-        logoMarca: "assets/logos/logo-gatorade.png",
-        instagramUrl: "https://www.instagram.com/guinishiyama/",
-        email: "guinishiyama@outlook.com"
+        tituloPagina: "Sarah Melo e Gui Nishiyama | Proposta Elite Core Brasil · HYROX São Paulo",
+        descricaoPagina: "Proposta de parceria entre Sarah Melo, Gui Nishiyama e Elite Core Brasil para o HYROX São Paulo 2026.",
+        marca: "Elite Core Brasil",
+        logoMarca: "assets/logos/logo-elite-core.png",
+        instagramSarah: {
+            usuario: "@sarahfmelo",
+            url: "https://www.instagram.com/sarahfmelo/"
+        },
+        instagramGui: {
+            usuario: "@guinishiyama",
+            url: "https://www.instagram.com/guinishiyama/"
+        },
+        email: "sarahm.digitalmg@gmail.com"
     },
 
     hero: {
-        etiqueta: "PROPOSTA DE PROJETO · GATORADE",
-        tituloLinha1: "Rumo à",
-        tituloDestaque: "Buenos Aires.",
-        subtitulo: "Minha segunda maratona. Uma estratégia construída para buscar o RP.",
-        evento: "MARATONA DE BUENOS AIRES",
-        criador: "GUILHERME NISHIYAMA",
-        identificador: "BUENOS AIRES / 42.195",
-        foto: "assets/images/capa.jpg"
+        etiqueta: "PROPOSTA DE PROJETO · ELITE CORE BRASIL",
+        tituloLinha1: "Nosso primeiro",
+        tituloDestaque: "HYROX.",
+        subtitulo: "Do primeiro treino à linha de chegada. Uma nova modalidade para descobrir juntos.",
+        evento: "HYROX SÃO PAULO 2026",
+        criador: "SARAH MELO · GUI NISHIYAMA",
+        identificador: "SÃO PAULO / DOUBLES",
+        foto: "assets/images/capa.png"
     },
 
     projeto: {
-        titulo: "A missão",
+    titulo: "O desafio",
 
         texto: [
-            "Esta será minha segunda maratona e mais um passo importante na minha trajetória no esporte. Desde que comecei a correr, evoluir na distância e construir uma história consistente dentro das maratonas se tornou um dos principais objetivos que tracei.",
+            "A corrida já faz parte da nossa rotina, mas o HYROX coloca a gente diante de um desafio completamente novo. Uma modalidade que mistura corrida, força e resistência e que exige aprender novos movimentos, desenvolver outras capacidades e descobrir uma nova forma de competir.",
 
-            "Na minha primeira maratona, enfrentei dificuldades durante a prova. Consegui concluir, mas não da forma que esperava. Em Buenos Aires, quero aplicar tudo o que aprendi e construir uma execução mais consistente, cuidando do treinamento, da estratégia de ritmo, da hidratação e da reposição ao longo dos 42,195 km.",
+            "Vamos encarar essa experiência juntos, na modalidade em dupla. A preparação será feita na Elite Core Brasil, onde teremos contato com o treinamento específico de HYROX e vamos construir, treino após treino, nossa evolução até o dia da prova.",
 
-            "O projeto documentará toda essa jornada: preparação, testes nos longões, viagem, Expo, prova e pós-prova. Cada etapa será transformada em conteúdo relevante e autêntico, mostrando como uma grande meta é construída por meio de disciplina, aprendizado e decisões aplicadas à performance."
+            "A ideia é registrar toda essa jornada de forma real: os primeiros treinos, as dificuldades, os aprendizados, nossa evolução como dupla e, finalmente, a experiência de colocar tudo em prática no HYROX São Paulo. Mais do que mostrar a prova, queremos mostrar como é descobrir um novo esporte do zero."
         ],
 
         dados: [
             {
                 rotulo: "EVENTO",
-                valor: "Maratona de Buenos Aires"
+                valor: "HYROX São Paulo"
             },
             {
                 rotulo: "DATA",
-                valor: "20 de setembro de 2026"
+                valor: "17 de outubro de 2026"
+            },
+            {
+                rotulo: "MODALIDADE",
+                valor: "Doubles"
             },
             {
                 rotulo: "DESAFIO",
-                valor: "2ª maratona"
-            },
-            {
-                rotulo: "OBJETIVO",
-                valor: "Novo recorde pessoal"
+                valor: "Nosso primeiro HYROX"
             }
         ]
     },
 
     sobre: {
-        titulo: "Guilherme Nishiyama",
+        titulo: "Sarah Melo e Gui Nishiyama",
 
-        destaque: "Criador de conteúdo e corredor amador em busca de evolução constante",
+        destaque: "Um casal, dois maratonistas e um novo esporte para descobrir juntos",
 
-        texto: "Compartilho uma rotina real de treinos, trabalho, provas, produtos e evolução na corrida. Meu conteúdo acompanha o processo de perto e cria conversa com uma comunidade interessada em performance, consistência, hidratação e vida ativa.",
+        texto: "O esporte faz parte da nossa rotina e também da forma como compartilhamos experiências. Já vivemos juntos treinos, provas, viagens e diferentes desafios dentro da corrida. Neste projeto, entramos juntos em um território novo. A Sarah conduz a parceria e a narrativa da experiência, enquanto o Guilherme entra como parceiro na preparação, na modalidade em dupla e na construção dos conteúdos. Mais do que mostrar apenas uma prova, queremos mostrar todo o processo de aprender, evoluir, errar, acertar e descobrir o HYROX juntos.",
 
         foto: "assets/images/perfil.jpg",
 
         metricas: [
             {
-                valor: "3,2 mi",
+                valor: "2.7M",
                 rotulo: "Visualizações",
-                periodo: "Últimos 90 dias"
+                periodo: "Sarah Melo · últimos 90 dias"
             },
             {
-                valor: "1,3 mi",
-                rotulo: "Contas alcançadas",
-                periodo: "Últimos 90 dias"
-            },
-            {
-                valor: "150 mil",
+                valor: "130 mil",
                 rotulo: "Interações",
-                periodo: "Últimos 90 dias"
+                periodo: "Sarah Melo · últimos 90 dias"
             },
             {
-                valor: "9,4 mil",
+                valor: "26.1 mil",
                 rotulo: "Seguidores",
-                periodo: ""
+                periodo: "Sarah Melo"
+            },
+            {
+                valor: "2.7M",
+                rotulo: "Visualizações",
+                periodo: "Gui Nishiyama · últimos 90 dias"
+            },
+            {
+                valor: "180 mil",
+                rotulo: "Interações",
+                periodo: "Gui Nishiyama · últimos 90 dias"
+            },
+            {
+                valor: "9.9 mil",
+                rotulo: "Seguidores",
+                periodo: "Gui Nishiyama"
             }
         ],
 
-        observacao: "Atualizar os números antes de cada envio."
+        observacao: "Métricas individuais de Sarah Melo e Gui Nishiyama. Atualizar os números antes do envio."
     },
 
-    gatorade: {
-        titulo: "Gatorade x Projeto",
+    /*
+    IMPORTANTE:
+    A chave "gatorade" foi mantida propositalmente para preservar
+    compatibilidade com o restante do site original.
+    O conteúdo abaixo já é totalmente dedicado à Elite Core Brasil.
+    */
 
-        introducao: "A parceria conecta ciência esportiva, hidratação e performance a uma jornada real de preparação para os 42,195 km. A Gatorade entra no projeto com uma função clara: acompanhar os testes, os aprendizados e a estratégia construída para a Maratona de Buenos Aires.",
+    gatorade: {
+        titulo: "Elite Core Brasil x Projeto",
+
+        introducao: "A Elite Core Brasil entra no centro da história. É onde teremos contato com a preparação específica para o HYROX, aprenderemos os movimentos, entenderemos a dinâmica da modalidade e construiremos, treino após treino, a nossa primeira experiência competitiva.",
 
         pilares: [
             {
                 numero: "01",
-                titulo: "Ciência aplicada à performance",
-                texto: "A preparação cria espaço para transformar hidratação e reposição em decisões reais de treino. Longões, ajustes de estratégia e preparação final permitem inserir informação de forma prática, responsável e conectada à experiência do corredor."
+                titulo: "Descobrir um novo esporte",
+                texto: "O projeto começa do ponto de vista de quem ainda está aprendendo. Queremos mostrar de forma acessível o que é o HYROX, como funciona um treinamento específico e quais são as diferenças percebidas por dois atletas que vêm principalmente da corrida."
             },
             {
                 numero: "02",
-                titulo: "Is It In You?",
-                texto: "Voltar para uma segunda maratona depois de uma experiência difícil representa disciplina, resiliência e vontade de evoluir. A busca pelo recorde pessoal transforma o projeto em uma história sobre descobrir o que existe dentro de cada atleta."
+                titulo: "Treinar com quem entende",
+                texto: "A preparação na Elite Core Brasil permite que o conteúdo vá além da experiência individual. Técnicas, movimentos, estratégias e aprendizados surgem naturalmente durante os treinos, reforçando a academia como referência dentro dessa jornada."
             },
             {
                 numero: "03",
-                titulo: "Estratégia testada no treino",
-                texto: "A presença do produto acontece ao longo do ciclo, dentro de longões, treinos-chave e preparação para a prova. Isso permite mostrar uso real, percepção pessoal e aprendizado antes da execução em Buenos Aires."
+                titulo: "Do treino para a arena",
+                texto: "Existe uma narrativa completa entre o primeiro treino e o dia da competição. A evolução ao longo das semanas cria expectativa para descobrir como nosso corpo, nossa preparação e nossa dinâmica como dupla responderão quando chegar a hora da prova."
             }
         ],
 
         beneficios: [
             {
-                titulo: "Conteúdo com função real",
-                texto: "A marca aparece ligada a situações concretas de hidratação, reposição e preparação."
+                titulo: "Experiência real",
+                texto: "A Elite Core Brasil participa da descoberta do HYROX desde o primeiro contato com a modalidade."
             },
             {
-                titulo: "Narrativa de superação",
-                texto: "A Gatorade participa de uma história sobre aprender com a primeira maratona e buscar uma execução melhor."
+                titulo: "Conteúdo educativo",
+                texto: "Os treinos permitem apresentar movimentos, desafios e características do HYROX de maneira prática e acessível."
             },
             {
-                titulo: "Presença recorrente",
-                texto: "A parceria se desenvolve durante todo o ciclo, e não apenas em uma publicação ou no dia da prova."
+                titulo: "Narrativa contínua",
+                texto: "A parceria acompanha uma história com começo, evolução e conclusão, em vez de aparecer apenas no dia da competição."
             }
         ]
     },
@@ -138,84 +168,112 @@ window.PROPOSTA = {
     plano: {
         titulo: "Plano de conteúdo",
 
-        introducao: "Uma proposta-base de conteúdo para acompanhar a preparação e a experiência da Maratona de Buenos Aires, com possibilidade de ajuste conforme os objetivos, o orçamento e as prioridades da Gatorade.",
+        introducao: "Uma jornada de conteúdo construída para acompanhar nossa descoberta do HYROX, a preparação dentro da Elite Core Brasil e a experiência da primeira competição. O formato pode ser ajustado em conjunto conforme a duração da preparação e os objetivos da parceria.",
 
         planoDeConteudo: [
             {
                 numero: "01",
-                etapa: "ANTES",
-                titulo: "Preparação",
+                etapa: "DESCOBERTA",
+                titulo: "Primeiro contato",
 
-                texto: "Conteúdos que apresentam o projeto e mostram como hidratação, reposição e estratégia fazem parte da preparação para os 42,195 km.",
+                texto: "Apresentar o desafio, entender o HYROX e registrar as primeiras experiências dentro de uma preparação específica para a modalidade.",
 
-                periodo: "PERÍODO DE PREPARAÇÃO",
+                periodo: "INÍCIO DO PROJETO",
 
                 entregas: [
                     {
                         formato: "REEL",
-                        titulo: "Anúncio do projeto",
-                        texto: "Anúncio oficial da participação na Maratona de Buenos Aires, apresentando a Gatorade como parceira da jornada."
+                        titulo: "Vamos fazer nosso primeiro HYROX",
+                        texto: "Apresentação oficial do desafio, da modalidade em dupla e da Elite Core Brasil como parceira da nossa preparação."
                     },
                     {
                         formato: "REEL",
-                        titulo: "Estratégia para os longões",
-                        texto: "Conteúdo mostrando como hidratação e reposição são testadas nos treinos mais importantes do ciclo."
+                        titulo: "Nosso primeiro treino de HYROX",
+                        texto: "Primeiro contato com os exercícios, movimentos e dinâmica do treinamento específico, mostrando dificuldades e primeiras impressões."
                     },
                     {
                         formato: "STORIES",
-                        titulo: "Bastidores da preparação",
-                        texto: "Inserções espontâneas durante treinos, longões e momentos relevantes da preparação."
+                        titulo: "Bastidores dos treinos",
+                        texto: "Conteúdos espontâneos durante os primeiros contatos com a academia, treinadores e exercícios da modalidade."
                     }
                 ]
             },
 
             {
                 numero: "02",
-                etapa: "DURANTE",
-                titulo: "Experiência",
+                etapa: "PREPARAÇÃO",
+                titulo: "Evolução",
 
-                texto: "Cobertura dos principais momentos da viagem e da prova, conectando a preparação construída durante o ciclo à experiência em Buenos Aires.",
+                texto: "Acompanhar a evolução durante os treinamentos, mostrando dificuldades, aprendizados e como começamos a entender o HYROX como dupla.",
 
-                periodo: "SEMANA DA PROVA",
+                periodo: "CICLO DE TREINAMENTO",
 
                 entregas: [
                     {
                         formato: "REEL",
-                        titulo: "Dia da prova",
-                        texto: "Registro da experiência dos 42,195 km e da execução da estratégia construída durante a preparação."
+                        titulo: "O que estamos aprendendo",
+                        texto: "Conteúdo mostrando nossa evolução nos movimentos, condicionamento e estratégia durante a preparação."
                     },
                     {
-                        formato: "CARROSSEL",
-                        titulo: "As últimas 24 horas",
-                        texto: "Expo, retirada do kit, organização dos produtos, hidratação, alimentação e decisões que antecedem a largada."
+                        formato: "REEL",
+                        titulo: "Corredores treinando para HYROX",
+                        texto: "As principais diferenças que percebemos entre nossa rotina tradicional de corrida e a preparação para um esporte híbrido."
                     },
                     {
                         formato: "STORIES",
-                        titulo: "Cobertura em tempo real",
-                        texto: "Conteúdos espontâneos durante a viagem, pré-prova, prova e chegada."
+                        titulo: "Rotina na Elite Core",
+                        texto: "Registros recorrentes dos treinos, evolução, dificuldades, brincadeiras da dupla e bastidores da preparação."
                     }
                 ]
             },
 
             {
                 numero: "03",
+                etapa: "PROVA",
+                titulo: "A experiência",
+
+                texto: "O momento de colocar em prática tudo o que aprendemos e registrar de forma completa a experiência do nosso primeiro HYROX.",
+
+                periodo: "17 DE OUTUBRO DE 2026",
+
+                entregas: [
+                    {
+                        formato: "REEL",
+                        titulo: "Nosso primeiro HYROX",
+                        texto: "Filme principal da experiência no HYROX São Paulo, acompanhando preparação, arena, esforço, dinâmica da dupla e chegada."
+                    },
+                    {
+                        formato: "CARROSSEL",
+                        titulo: "Como foi nosso primeiro HYROX",
+                        texto: "Registro visual da prova com os principais momentos, percepções e aprendizados da experiência."
+                    },
+                    {
+                        formato: "STORIES",
+                        titulo: "Dia de prova",
+                        texto: "Cobertura espontânea do pré-prova, bastidores, arena, preparação e momentos depois da competição."
+                    }
+                ]
+            },
+
+            {
+                numero: "04",
                 etapa: "DEPOIS",
                 titulo: "Aprendizado",
 
-                texto: "Fechamento da jornada com uma análise honesta da experiência, dos aprendizados e da estratégia utilizada na segunda maratona.",
+                texto: "Fechamento da jornada com a visão de quem chegou ao projeto sem experiência no HYROX e conseguiu atravessar todo o processo até a linha de chegada.",
 
                 periodo: "PÓS-PROVA",
 
                 entregas: [
                     {
                         formato: "REEL",
-                        titulo: "O que funcionou na estratégia",
-                        texto: "Análise honesta da preparação, do ritmo, da hidratação, da reposição e das decisões tomadas durante a maratona."
+                        titulo: "HYROX Report",
+                        texto: "Uma conversa sobre dificuldades, surpresas, evolução e o que mudou na nossa percepção depois de viver a preparação e a prova."
                     },
                     {
                         formato: "STORIES",
                         titulo: "Repercussão e fechamento",
-                        texto: "Respostas à comunidade, impressões pós-prova e encerramento da parceria."
+                        texto: "Impressões pós-prova, respostas à comunidade e encerramento da primeira experiência no HYROX."
                     }
                 ]
             }
@@ -223,47 +281,47 @@ window.PROPOSTA = {
     },
 
     parceria: {
-        titulo: "Uma proposta flexível",
+        titulo: "Construindo essa jornada juntos",
 
-        chamada: "Esta proposta apresenta um escopo-base para a participação da Gatorade no projeto da Maratona de Buenos Aires. O formato, a quantidade de entregas e o investimento podem ser ajustados de acordo com os objetivos, as prioridades e o orçamento disponível para a parceria.",
+        chamada: "A proposta é transformar o convite da Elite Core Brasil em uma jornada completa de descoberta do HYROX. Mais do que participar da prova, queremos viver a preparação dentro da academia, documentar nossa evolução e mostrar como uma experiência nova pode aproximar mais pessoas da modalidade.",
 
-        valor: "R$ 5.000,00",
+        valor: "A DEFINIR",
 
-        resumoTitulo: "Proposta-base",
+        resumoTitulo: "Apoio ao projeto",
 
         resumo: [
             {
-                valor: "04",
-                titulo: "Reels",
-                texto: "Anúncio do projeto, estratégia de preparação e experiência no dia da prova."
+                valor: "02",
+                titulo: "Inscrições HYROX",
+                texto: "Participação de Sarah Melo e Gui Nishiyama na modalidade em dupla do HYROX São Paulo."
             },
             {
-                valor: "01",
-                titulo: "Carrossel",
-                texto: "Conteúdo editorial com os dados, aprendizados e principais momentos da maratona."
+                valor: "Treinos",
+                titulo: "Preparação Elite Core",
+                texto: "Acesso aos treinamentos específicos e acompanhamento durante o período de preparação para a competição."
             },
             {
-                valor: "Stories",
-                titulo: "Cobertura recorrente",
-                texto: "Presença da marca durante a preparação, viagem, prova e pós-prova."
+                valor: "Produção",
+                titulo: "Registro da experiência",
+                texto: "Apoio à produção audiovisual do projeto, principalmente para o registro profissional no dia da prova."
             },
             {
-                valor: "Flexível",
-                titulo: "Escopo negociável",
-                texto: "As entregas podem ser reduzidas, ampliadas ou reorganizadas conforme o formato de parceria definido com a marca."
+                valor: "Logística",
+                titulo: "Dia da competição",
+                texto: "Possibilidade de apoio aos custos diretamente relacionados ao deslocamento e à execução do projeto no dia do evento."
             }
         ],
 
-        observacao: "O valor apresentado é uma referência para o escopo-base e não representa uma condição fechada. A parceria também pode ser construída em formatos menores, incluindo apoio parcial à viagem, inscrição da prova, fornecimento de produtos ou uma combinação entre apoio financeiro e permuta. Direitos de uso, impulsionamento, exclusividade e condições finais serão definidos em conjunto."
+        observacao: "O formato de apoio pode ser construído em conjunto com a Elite Core Brasil. A prioridade do projeto é viabilizar as inscrições da dupla, o ciclo de treinamentos e a documentação completa da experiência. Custos adicionais de produção audiovisual e logística podem ser alinhados separadamente conforme o formato definido para a parceria."
     },
 
     encerramento: {
-        etiqueta: "06 · VAMOS JUNTOS",
-        tituloLinha1: "Nos vemos em",
-        tituloDestaque: "Buenos Aires!",
-        texto: "Uma parceria para acompanhar cada etapa da preparação, transformar estratégia em conteúdo e chegar aos 42,195 km com a Gatorade presente em toda a jornada.",
+        etiqueta: "06 · NOSSO PRIMEIRO HYROX",
+        tituloLinha1: "Nos vemos na",
+        tituloDestaque: "arena.",
+        texto: "Uma jornada para descobrir um novo esporte, aprender com quem vive o HYROX e chegar juntos à nossa primeira linha de chegada.",
         botaoEmail: "Conversar sobre o projeto",
         botaoInstagram: "Abrir Instagram",
-        rodape: "Guilherme Nishiyama · Proposta Gatorade · 2026"
+        rodape: "Sarah Melo e Gui Nishiyama · Elite Core Brasil · HYROX São Paulo 2026"
     }
 };
