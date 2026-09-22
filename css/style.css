@@ -22,6 +22,7 @@
     --radius-large: 24px;
 }
 
+
 /* =========================================================
    RESET / BASE
 ========================================================= */
@@ -2477,6 +2478,111 @@ button {
     .pillar-outcome {
         min-height: 0 !important;
         margin-top: 0 !important;
+    }
+}
+
+/* =========================================================
+   ELITE CORE — CORES FINAIS
+   Fundo: #000022
+   Destaques: #EA5F04
+========================================================= */
+
+.section--blue,
+.brand-section,
+.brand-section--gatorade {
+    background: #000022 !important;
+    color: #ffffff !important;
+}
+
+.brand-section-heading__meta {
+    color: rgba(255, 255, 255, .72) !important;
+}
+
+.brand-section-heading__meta span {
+    color: #EA5F04 !important;
+}
+
+.brand-section-title,
+.brand-title {
+    color: #ffffff !important;
+}
+
+.brand-section-title span {
+    color: #ffffff !important;
+}
+
+.brand-section-title img,
+.brand-logo {
+    filter: brightness(0) invert(1) !important;
+}
+
+.brand-logo-wrap {
+    border-color: rgba(234, 95, 4, .38) !important;
+    background: rgba(234, 95, 4, .08) !important;
+}
+
+.brand-logo-wrap:has(.brand-logo.image-missing)::after {
+    color: #ffffff !important;
+}
+
+.brand-intro {
+    color: rgba(255, 255, 255, .82) !important;
+}
+
+.brand-grid {
+    border-top-color: rgba(255, 255, 255, .18) !important;
+    border-bottom-color: rgba(255, 255, 255, .18) !important;
+}
+
+.brand-grid article + article {
+    border-left-color: rgba(255, 255, 255, .18) !important;
+}
+
+.brand-grid > article > span {
+    color: #EA5F04 !important;
+}
+
+.brand-grid h3 {
+    color: #ffffff !important;
+}
+
+.brand-grid p {
+    color: rgba(255, 255, 255, .74) !important;
+}
+
+.pillar-outcome::before {
+    background: rgba(234, 95, 4, .42) !important;
+}
+
+.pillar-outcome small {
+    color: #EA5F04 !important;
+}
+
+.pillar-outcome strong {
+    color: #ffffff !important;
+}
+
+.pillar-outcome p {
+    color: rgba(255, 255, 255, .74) !important;
+}
+
+.benefit-row article {
+    border-color: rgba(234, 95, 4, .26) !important;
+    background: rgba(234, 95, 4, .08) !important;
+}
+
+.benefit-row h3 {
+    color: #ffffff !important;
+}
+
+.benefit-row p {
+    color: rgba(255, 255, 255, .72) !important;
+}
+
+@media (max-width: 900px) {
+    .brand-grid article + article {
+        border-top-color: rgba(255, 255, 255, .18) !important;
+        border-left: 0 !important;
     }
 }
 
