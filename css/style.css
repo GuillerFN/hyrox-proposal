@@ -2586,3 +2586,28 @@ button {
     }
 }
 
+/* =========================================================
+   ELITE CORE — LOGO COLORIDO
+   Mantém as cores originais do PNG
+========================================================= */
+
+.brand-section-title img,
+.brand-section .brand-logo,
+.brand-section--gatorade .brand-logo {
+    filter: none !important;
+    opacity: 1 !important;
+}
+
+/* =========================================================
+   ELITE CORE — PRESERVAR CORES ORIGINAIS DO LOGO
+========================================================= */
+
+#gatorade .brand-section-title img,
+#gatorade .brand-logo,
+.brand-section--gatorade .brand-section-title img,
+.brand-section--gatorade .brand-logo {
+    filter: none !important;
+    -webkit-filter: none !important;
+    opacity: 1 !important;
+    mix-blend-mode: normal !important;
+}
