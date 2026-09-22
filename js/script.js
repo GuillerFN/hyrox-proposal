@@ -24,6 +24,77 @@
             .split(".")
             .reduce((accumulator, key) => accumulator?.[key], data);
 
+
+    /*
+    =====================================================
+    PERFIS SOCIAIS DO PROJETO
+    =====================================================
+    */
+
+    const configuracao =
+        data.configuracao || {};
+
+    const instagramSarahUrl =
+        configuracao.instagramSarah?.url ||
+        configuracao.instagramUrlSarah ||
+        (
+            configuracao.instagramUrl
+                ?.toLowerCase()
+                .includes("sarahfmelo")
+                ? configuracao.instagramUrl
+                : ""
+        ) ||
+        "https://www.instagram.com/sarahfmelo/";
+
+    const instagramSarahUsuario =
+        configuracao.instagramSarah?.usuario ||
+        "@sarahfmelo";
+
+    const instagramGuiUrl =
+        configuracao.instagramGui?.url ||
+        configuracao.instagramUrlGui ||
+        (
+            configuracao.instagramUrl &&
+            !configuracao.instagramUrl
+                .toLowerCase()
+                .includes("sarahfmelo")
+                ? configuracao.instagramUrl
+                : ""
+        ) ||
+        "https://www.instagram.com/guinishiyama/";
+
+    const instagramGuiUsuario =
+        configuracao.instagramGui?.usuario ||
+        "@guinishiyama";
+
+    const renderInstagramLinks = () => `
+        <div class="instagram-links">
+            <a
+                href="${escapeHTML(
+                    instagramSarahUrl
+                )}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                ${escapeHTML(
+                    instagramSarahUsuario
+                )} ↗
+            </a>
+
+            <a
+                href="${escapeHTML(
+                    instagramGuiUrl
+                )}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                ${escapeHTML(
+                    instagramGuiUsuario
+                )} ↗
+            </a>
+        </div>
+    `;
+
     /*
     =====================================================
     CONFIGURAÇÕES DA PÁGINA
@@ -166,7 +237,7 @@
 
     /*
     =====================================================
-    02 — SOBRE MIM
+    02 — SOBRE NÓS
     =====================================================
     */
 
@@ -218,7 +289,8 @@
             >
                 ${heading(
                     "02",
-                    "SOBRE MIM",
+                    data.sobre.etiqueta ||
+                        "SOBRE NÓS",
                     data.sobre.titulo
                 )}
 
@@ -246,16 +318,7 @@
                             )}
                         </p>
 
-                        <a
-                            href="${escapeHTML(
-                                data.configuracao
-                                    ?.instagramUrl
-                            )}"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            @guinishiyama ↗
-                        </a>
+                        ${renderInstagramLinks()}
                     </div>
                 </div>
 
@@ -281,7 +344,7 @@
 
     /*
     =====================================================
-    03 — GATORADE
+    03 — MARCA PARCEIRA
     O LOGO APARECE SOMENTE NO TÍTULO PRINCIPAL
     =====================================================
     */
@@ -366,7 +429,7 @@
                         <span>03</span>
                         ${escapeHTML(
                             data.configuracao?.marca ||
-                                "GATORADE"
+                                "ELITE CORE BRASIL"
                         )}
                     </p>
 
@@ -375,11 +438,11 @@
                             src="${escapeHTML(
                                 data.configuracao
                                     ?.logoMarca ||
-                                    "assets/logos/logo-gatorade.png"
+                                    "assets/logos/logo-elite-core.png"
                             )}"
                             alt="${escapeHTML(
                                 data.configuracao?.marca ||
-                                    "Gatorade"
+                                    "Elite Core Brasil"
                             )}"
                         >
                         <span>x Projeto</span>
@@ -720,16 +783,12 @@
         const email =
             data.configuracao?.email || "";
 
-        const instagram =
-            data.configuracao
-                ?.instagramUrl || "#";
-
         const assunto = [
             "Projeto",
             data.hero?.evento ||
-                "Maratona de Buenos Aires",
+                "HYROX São Paulo",
             data.configuracao?.marca ||
-                "Gatorade"
+                "Elite Core Brasil"
         ].join(" · ");
 
         const etiquetaCompleta =
@@ -807,14 +866,30 @@
                         <a
                             class="button button--outline"
                             href="${escapeHTML(
-                                instagram
+                                instagramSarahUrl
                             )}"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             ${escapeHTML(
                                 data.encerramento
-                                    .botaoInstagram
+                                    .botaoInstagramSarah ||
+                                    instagramSarahUsuario
+                            )} ↗
+                        </a>
+
+                        <a
+                            class="button button--outline"
+                            href="${escapeHTML(
+                                instagramGuiUrl
+                            )}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            ${escapeHTML(
+                                data.encerramento
+                                    .botaoInstagramGui ||
+                                    instagramGuiUsuario
                             )} ↗
                         </a>
                     </div>
@@ -847,26 +922,35 @@
 
     /*
     =====================================================
-    ATUALIZAÇÃO DE LINKS ANTIGOS DA ASICS
+    ATUALIZAÇÃO DE LINKS ANTIGOS DA MARCA
     =====================================================
     */
 
+    const nomeMarca =
+        data.configuracao?.marca ||
+        "Elite Core Brasil";
+
     document
-        .querySelectorAll('a[href="#asics"]')
+        .querySelectorAll(
+            'a[href="#asics"], a[href="#gatorade"]'
+        )
         .forEach((link) => {
             link.setAttribute(
                 "href",
                 "#gatorade"
             );
 
-            if (
+            const textoAtual =
                 link.textContent
                     .trim()
-                    .toUpperCase() ===
-                "ASICS"
+                    .toUpperCase();
+
+            if (
+                textoAtual === "ASICS" ||
+                textoAtual === "GATORADE"
             ) {
                 link.textContent =
-                    "GATORADE";
+                    nomeMarca;
             }
         });
 
